@@ -4,14 +4,21 @@ defmodule MyLib do
     {length, _} = argv |> hd |> Integer.parse
     IO.puts "Timing with list length #{length}"
 
-    random_list(length)
-    |> time_sort(:insertion_sort)
+    case tl(argv) do
+      [func] -> # test a single function
+        random_list(length)
+        |> time_sort(String.to_atom(func))
+      [] -> # test all functions
+        random_list(length)
+        |> time_sort(:insertion_sort)
+        |> time_sort(:merge_sort)
+    end
   end
 
   # Times function
   defp time_sort(list, function) do
     IO.puts "-#{function}"
-    {ns, _} = :timer.tc(MyLib.Sort, function, [list])
+    {ns, res} = :timer.tc(MyLib.Sort, function, [list])
     IO.puts "  #{ns/1_000_000}s"
     list
   end

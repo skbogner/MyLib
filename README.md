@@ -10,6 +10,8 @@ The goal is to challenge myself and along the way get more intimate with Elixir,
 Getting familiar with standard algorithms and their complexities is one part of the project. They form a basis from which you can build larger more complex software and algorithms.
 
 #### Algorithms (ongoing) | [Primer](http://discrete.gr/complexity)
+- [x] Insertion Sort
+- [x] Merge Sort
 - [ ] Dijkstra's
 - [ ] Floyd-Warshall
 - [ ] Traveling Salesman
@@ -20,7 +22,6 @@ Getting familiar with standard algorithms and their complexities is one part of 
 - [ ] K-Way Merge
 - [ ] Bubble Sort
 - [ ] Selection Sort
-- [x] Insertion Sort
 - [ ] In-place Quick Sort
 - [ ] Bucket Sort
 - [ ] Radix Sort
