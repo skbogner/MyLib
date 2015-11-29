@@ -7,6 +7,7 @@ defmodule MyLib.Mixfile do
      elixir: "~> 1.1",
      name: "MyLib",
      source_url: "https://github.com/skbogner/MyLib",
+     escript: escript_config,
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps]
@@ -34,4 +35,10 @@ defmodule MyLib.Mixfile do
       {:ex_doc, "~> 0.11.1"}
     ]
   end
+
+  # Escript configuration
+  defp escript_config do
+    [main_module: MyLib]
+  end
+
 end
