@@ -1,0 +1,2 @@
+defmodule MyLib do
+end
