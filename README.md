@@ -20,7 +20,7 @@ Getting familiar with standard algorithms and their complexities is one part of 
 - [ ] K-Way Merge
 - [ ] Bubble Sort
 - [ ] Selection Sort
-- [ ] Insertion Sort
+- [x] Insertion Sort
 - [ ] In-place Quick Sort
 - [ ] Bucket Sort
 - [ ] Radix Sort
